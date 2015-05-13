@@ -8,7 +8,7 @@
 * Main : scenario console
 * SubJMS : thread pour la recuperation des messages des topics
 * Client: 
-    - Map<SubJMS><nom_topic>
+    - Map[SubJMS][nom_topic]
     - connexion(login, mot_de_passe)
     - Sendmsg(#, String)
     - getList() : recupere sur le serveur l'ensemble des topic existant
