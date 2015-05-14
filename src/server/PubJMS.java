@@ -61,7 +61,7 @@ public class PubJMS {
      * @throws NamingException
      */
     private void publisherConfiguration(String hashtag) throws JMSException, NamingException {
-        sendSession = connect.createSession(false, javax.jms.Session.AUTO_ACKNOWLEDGE);
+        sendSession = connect.createSession(true, -1);
         Topic topic = (Topic) context.lookup(hashtag);
         sender = sendSession.createProducer(topic);
     }
