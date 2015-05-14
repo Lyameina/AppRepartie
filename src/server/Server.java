@@ -1,5 +1,7 @@
 package server;
 
+import java.rmi.Remote;
+import java.rmi.RemoteException;
 import java.util.List;
 
 /**
@@ -10,18 +12,57 @@ import java.util.List;
  * @version 13/05/15
  */
 
-public interface Server {
+public interface Server extends Remote {
 
-    boolean login(String login, String password);
 
-    boolean logout(String login);
+    /**
+     * @param login    : String
+     * @param password : String
+     * @return boolean
+     * @throws RemoteException
+     */
+    boolean signup(String login, String password) throws RemoteException;
 
-    boolean sendmsg(String hashtag, String message, String login);
+    /**
+     * Method to log user in
+     *
+     * @param login    : String
+     * @param password : String
+     * @return boolean
+     */
+    boolean login(String login, String password) throws RemoteException;
 
-    boolean follow(String login, String hashtag);
+    /**
+     * Method
+     *
+     * @param login
+     * @return
+     */
+    boolean logout(String login) throws RemoteException;
 
-    List<String> getAllHashtags();
+    /**
+     * @param hashtag
+     * @param message
+     * @param login
+     * @return
+     */
+    boolean sendmsg(String hashtag, String message, String login) throws RemoteException;
 
-    List<String> getTopHashtags();
+    /**
+     * @param login
+     * @param hashtag
+     * @return
+     */
+    boolean follow(String login, String hashtag) throws RemoteException;
+
+    /**
+     * @return
+     */
+    List<String> getAllHashtags() throws RemoteException;
+
+    /**
+     * @return
+     */
+    List<String> getTopHashtags() throws RemoteException;
 
 }
