@@ -1,8 +1,13 @@
 package client;
 
 /**
- * Created by camille on 14/05/15.
+ * client.Tweet - apprep :: twitter :: client
+ *
+ * @author Camille Boinaud [boinaud@polytech.unice.fr]
+ * @author Maylanie Mesnier [mesnier@polytech.unice.fr]
+ * @version 14/05/15
  */
+
 public class Tweet {
 
     private String login;
