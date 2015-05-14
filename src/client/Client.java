@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -43,7 +44,7 @@ public class Client {
         System.out.println("Recupération des Hashtags aux quels vous êtes abonné...");
 
         List<String> list = serveur.getUserHashtags(login);
-
+        subscribers = new HashMap<SubJMS, String>();
         System.out.println("* Mise en place des subcribers JMS *");
         for (String s : list) {
             SubJMS sub = new SubJMS(s);
