@@ -104,6 +104,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server {
         if(users.get(login).isLoggedIn()){
 
             if(!hashtags.contains(hashtag)) hashtags.add(hashtag);
+            if(!users.get(login).getFollowing().contains(hashtag)) users.get(login).getFollowing().add(hashtag);
 
             try {
                 publisher.publish(hashtag, message, login);
