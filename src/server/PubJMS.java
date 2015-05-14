@@ -23,7 +23,13 @@ public class PubJMS {
     private Queue queue;
     private InitialContext context;
 
-    public PubJMS() {
+    public PubJMS()
+    {
+        try {
+            this.configuration();
+        } catch (JMSException e) {
+            e.printStackTrace();
+        }
     }
 
     /**

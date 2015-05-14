@@ -68,6 +68,14 @@ public class Account {
      */
     public void removeFollowing(String hashtag) {
         this.following.remove(hashtag);
+    }
 
+    /**
+     * Following getter
+     * @return List<String>
+     */
+    public List<String> getFollowing()
+    {
+        return following;
     }
 }
