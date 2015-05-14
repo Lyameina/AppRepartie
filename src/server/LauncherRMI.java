@@ -17,18 +17,19 @@ import java.rmi.registry.LocateRegistry;
 public class LauncherRMI {
 
     public static void main(String[]args) {
-      /**  try {
-            System.out.println("création de l'objet serveur ...");
-            Server server = new ServerImpl();
-            System.out.println("Référencement dans le RMIRegistry...");
+      try {
 
-            //faire le registry sur le port 2048:
-            LocateRegistry.createRegistry(2048);
+          int port = 2048;
+          String host = "localhost";
 
-            Naming.rebind("Server", server);
-            System.out.println("Attente d'invocation - CTRL-C pour stopper");
+          LocateRegistry.createRegistry(port);
+          Server server = new ServerImpl();
+          Naming.rebind("rmi://" + host + ":" + port + "/Server", server);
+
+          System.out.println("Attente d'invocation - CTRL-C pour stopper");
+
         } catch (Exception e){
             e.printStackTrace();
-        }**/
+        }
     }
 }
