@@ -16,6 +16,7 @@ public interface Server extends Remote {
 
 
     /**
+     * Method used to create a new account
      * @param login    : String
      * @param password : String
      * @return boolean
@@ -24,7 +25,7 @@ public interface Server extends Remote {
     boolean signup(String login, String password) throws RemoteException;
 
     /**
-     * Method to log user in
+     * Method to connect user to its account
      *
      * @param login    : String
      * @param password : String
@@ -33,36 +34,41 @@ public interface Server extends Remote {
     boolean login(String login, String password) throws RemoteException;
 
     /**
-     * Method
-     *
-     * @param login
-     * @return
+     * Method used to disconnect a user
+     * @param login : String
+     * @return boolean
      */
     boolean logout(String login) throws RemoteException;
 
     /**
-     * @param hashtag
-     * @param message
-     * @param login
-     * @return
+     * Method used to send a message trough a JMS topic
+     * @param hashtag : String
+     * @param message : String
+     * @param login : String
+     * @return boolean
      */
     boolean sendmsg(String hashtag, String message, String login) throws RemoteException;
 
     /**
-     * @param login
-     * @param hashtag
-     * @return
+     * Add a new hashtag in user's following list
+     * @param login : String
+     * @param hashtag : String
+     * @return boolean
      */
     boolean follow(String login, String hashtag) throws RemoteException;
 
     /**
-     * @return
+     * Returns all hashtags created by users
+     * @return List<String>
      */
     List<String> getAllHashtags() throws RemoteException;
 
     /**
-     * @return
+     * Returns all hashtags followed  by a user
+     * @param login : String
+     * @return List<String>
+     * @throws RemoteException
      */
-    List<String> getTopHashtags() throws RemoteException;
+    List<String> getUserHashtags(String login) throws RemoteException;
 
 }
