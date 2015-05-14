@@ -102,6 +102,9 @@ public class ServerImpl extends UnicastRemoteObject implements Server {
     public boolean sendmsg(String hashtag, String message, String login) throws RemoteException
     {
         if(users.get(login).isLoggedIn()){
+
+            if(!hashtags.contains(hashtag)) hashtags.add(hashtag);
+
             try {
                 publisher.publish(hashtag, message, login);
                 return true;
@@ -122,6 +125,21 @@ public class ServerImpl extends UnicastRemoteObject implements Server {
     {
         if(users.get(login).isLoggedIn()){
             users.get(login).addFollowing(hashtag);
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Remove a hashtag in user's following list
+     * @param login : String
+     * @param hashtag : String
+     * @return boolean
+     */
+    public boolean unfollow(String login, String hashtag) throws RemoteException
+    {
+        if(users.get(login).isLoggedIn()){
+            users.get(login).removeFollowing(hashtag);
             return true;
         }
         return false;

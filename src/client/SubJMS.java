@@ -81,9 +81,8 @@ public class SubJMS implements MessageListener {
      */
     public void onMessage(Message message) {
         try {
-            System.out.print("New tweet from : "+((MapMessage)message).getString("user")
-                    +" at "+((MapMessage)message).getString("date"));
-            System.out.println(((MapMessage) message).getString("tweet"));
+            Client.tweets.add(new Tweet(((MapMessage)message).getString("user"), ((MapMessage)message).getString("tweet"),
+                    ((MapMessage) message).getString("msg")));
         } catch (JMSException e) {
             e.printStackTrace();
         }
