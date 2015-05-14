@@ -17,11 +17,10 @@ import java.util.Hashtable;
 
 public class PubJMS {
 
-    private Connection connect;
-    private Session sendSession;
-    private MessageProducer sender;
-    private Queue queue;
-    private InitialContext context;
+    private Connection connect = null;
+    private Session sendSession = null;
+    private MessageProducer sender = null;
+    private InitialContext context = null;
 
     public PubJMS()
     {
@@ -34,7 +33,6 @@ public class PubJMS {
 
     /**
      * Method used to set properties used for JMS connection
-     *
      * @throws JMSException
      */
     private void configuration() throws JMSException {
