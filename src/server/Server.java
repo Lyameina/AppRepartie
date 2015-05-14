@@ -16,7 +16,7 @@ public interface Server {
 
     boolean logout(String login);
 
-    boolean sendmsg(String hashtag, String message);
+    boolean sendmsg(String hashtag, String message, String login);
 
     boolean follow(String login, String hashtag);
 
