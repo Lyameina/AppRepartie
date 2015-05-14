@@ -1,5 +1,6 @@
 package server;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,34 +13,61 @@ import java.util.List;
 
 public class Account {
 
-    private String login;
-    private String password;
-    private boolean loggedIn;
-    private List<String> following;
+    private String login; //username
+    private String password; //password
+    private boolean loggedIn; //this field is set to true if the user is logged in
+    private List<String> following; //list of hashtags the user is following
+
 
     public Account(String login, String password) {
-        //TODO
+        this.login = login;
+        this.password = password;
+        this.loggedIn = true;
+        this.following = new ArrayList<String>();
     }
 
-    public boolean connection(String login, String password) {
-        //TODO
-        return false;
+    /**
+     * Method to verify data connexion settings
+     *
+     * @param login    : String
+     * @param password : String
+     * @return boolean
+     */
+    public boolean login(String login, String password) {
+        loggedIn = this.login.equals(login) && this.password.equals(password);
+
+        return loggedIn;
     }
 
+    /**
+     * loggedIn field getter
+     * @return boolean
+     */
     public boolean isLoggedIn() {
-        //TODO
-        return false;
+        return loggedIn;
     }
 
-    public void deconnection() {
-        //TODO
+    /**
+     * Method used for user log out
+     */
+    public void logout() {
+        loggedIn = false;
     }
 
+    /**
+     * Method used to add a new following to user's list
+     * @param hashtag : String
+     */
     public void addFollowing(String hashtag) {
-        //TODO
+        this.following.add(hashtag);
     }
 
+    /**
+     * Method used to remove a following from user's list
+     * @param hashtag : String
+     */
     public void removeFollowing(String hashtag) {
-        //TODO
+        this.following.remove(hashtag);
+
     }
 }
