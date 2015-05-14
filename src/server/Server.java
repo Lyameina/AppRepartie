@@ -58,6 +58,14 @@ public interface Server extends Remote {
     boolean follow(String login, String hashtag) throws RemoteException;
 
     /**
+     * Remove a hashtag in user's following list
+     * @param login : String
+     * @param hashtag : String
+     * @return boolean
+     */
+    boolean unfollow(String login, String hashtag) throws RemoteException;
+
+    /**
      * Returns all hashtags created by users
      * @return List<String>
      */
