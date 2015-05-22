@@ -1,0 +1,748 @@
+2015-05-11 09:45:38,838 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@73441e32: startup date [Mon May 11 09:45:38 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2015-05-11 09:45:40,268 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/bin/linux-x86-64/../../data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2015-05-11 09:45:40,308 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/bin/linux-x86-64/../../data/kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 09:45:40,767 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-49491-1431330340634-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 09:45:40,789 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 09:45:40,795 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:45:40,802 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 09:45:40,807 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:45:40,813 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 09:45:40,815 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:45:40,821 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 09:45:40,839 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:45:40,962 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2015-05-11 09:45:40,963 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:45:40,965 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-49491-1431330340634-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 09:45:40,965 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 09:45:41,353 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | WrapperSimpleAppMain
+2015-05-11 09:45:41,361 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | WrapperSimpleAppMain
+2015-05-11 09:45:41,404 | INFO  | Using file upload directory: /tmp/uploads | io.hawt.web.UploadServlet | WrapperSimpleAppMain
+2015-05-11 09:45:41,419 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | WrapperSimpleAppMain
+2015-05-11 09:45:41,667 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-05-11 09:45:41,715 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2015-05-11 09:45:57,105 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-49491-1431330340634-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-24
+2015-05-11 09:45:58,809 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 09:45:58,825 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 09:45:58,830 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 09:45:58,855 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 09:45:58,923 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 09:45:58,928 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/bin/linux-x86-64/../../data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-24
+2015-05-11 09:45:58,929 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-24
+2015-05-11 09:45:58,931 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-24
+2015-05-11 09:45:58,934 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-24
+2015-05-11 09:45:59,254 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-49491-1431330340634-0:1) uptime 18.978 seconds | org.apache.activemq.broker.BrokerService | Thread-24
+2015-05-11 09:45:59,255 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-49491-1431330340634-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-24
+2015-05-11 09:45:59,255 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@73441e32: startup date [Mon May 11 09:45:38 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-24
+2015-05-11 09:45:59,275 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | Thread-24
+2015-05-11 09:45:59,281 | INFO  | Destroying hawtio authentication filter | io.hawt.web.AuthenticationFilter | Thread-24
+2015-05-11 09:46:06,133 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7d1a9fbc: startup date [Mon May 11 09:46:06 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2015-05-11 09:46:07,557 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/bin/linux-x86-64/../../data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2015-05-11 09:46:07,603 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/bin/linux-x86-64/../../data/kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 09:46:08,140 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-05-11 09:46:08,169 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-05-11 09:46:08,173 | INFO  | Recovery replayed 4 operations from the journal in 0.026 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-05-11 09:46:08,341 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-42119-1431330368200-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 09:46:08,365 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 09:46:08,368 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:46:08,374 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 09:46:08,399 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:46:08,406 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 09:46:08,407 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:46:08,413 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 09:46:08,415 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:46:08,545 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2015-05-11 09:46:08,546 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 09:46:08,549 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-42119-1431330368200-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 09:46:08,550 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 09:46:08,995 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | WrapperSimpleAppMain
+2015-05-11 09:46:09,001 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | WrapperSimpleAppMain
+2015-05-11 09:46:09,053 | INFO  | Using file upload directory: /tmp/uploads | io.hawt.web.UploadServlet | WrapperSimpleAppMain
+2015-05-11 09:46:09,071 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | WrapperSimpleAppMain
+2015-05-11 09:46:09,305 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-05-11 09:46:09,340 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2015-05-11 10:00:55,106 | WARN  | Transport Connection to: tcp://127.0.0.1:40580 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:40580@61616
+2015-05-11 10:27:59,399 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp1099057696-46
+2015-05-11 10:28:35,205 | WARN  |  | org.eclipse.jetty.servlet.ServletHandler | qtp1099057696-45
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:948)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:693)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1091)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:896)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	... 41 more
+2015-05-11 10:28:35,210 | WARN  | /admin/purgeDestination.action | org.eclipse.jetty.servlet.ServletHandler | qtp1099057696-45
+java.lang.UnsupportedOperationException: Possible CSRF attack
+	at org.apache.activemq.web.handler.BindingBeanNameUrlHandlerMapping.getHandlerInternal(BindingBeanNameUrlHandlerMapping.java:59)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:298)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1091)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1076)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:896)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:827)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:693)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:926)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:988)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+2015-05-11 10:39:09,724 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-42119-1431330368200-0:1) is shutting down | org.apache.activemq.broker.BrokerService | Thread-24
+2015-05-11 10:39:11,393 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 10:39:12,225 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 10:39:14,224 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 10:39:16,220 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 10:39:16,287 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 10:39:16,299 | INFO  | Connector vm://localhost stopped | org.apache.activemq.broker.TransportConnector | Thread-24
+2015-05-11 10:39:16,307 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/bin/linux-x86-64/../../data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | Thread-24
+2015-05-11 10:39:16,308 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-24
+2015-05-11 10:39:16,310 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | Thread-24
+2015-05-11 10:39:16,311 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | Thread-24
+2015-05-11 10:39:16,619 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-42119-1431330368200-0:1) uptime 53 minutes | org.apache.activemq.broker.BrokerService | Thread-24
+2015-05-11 10:39:16,620 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-42119-1431330368200-0:1) is shutdown | org.apache.activemq.broker.BrokerService | Thread-24
+2015-05-11 10:39:16,620 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@7d1a9fbc: startup date [Mon May 11 09:46:06 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | Thread-24
+2015-05-11 10:39:16,636 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | Thread-24
+2015-05-11 10:39:16,684 | INFO  | Destroying hawtio authentication filter | io.hawt.web.AuthenticationFilter | Thread-24
+2015-05-11 10:39:21,514 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@147597d: startup date [Mon May 11 10:39:21 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | WrapperSimpleAppMain
+2015-05-11 10:39:23,011 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/bin/linux-x86-64/../../data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | WrapperSimpleAppMain
+2015-05-11 10:39:23,052 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/bin/linux-x86-64/../../data/kahadb] | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 10:39:23,522 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-05-11 10:39:23,558 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-05-11 10:39:23,568 | INFO  | Recovery replayed 66 operations from the journal in 0.035 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | WrapperSimpleAppMain
+2015-05-11 10:39:23,742 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-47579-1431333563607-0:1) is starting | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 10:39:23,838 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 10:39:23,842 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 10:39:23,850 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 10:39:23,853 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 10:39:23,860 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 10:39:23,862 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 10:39:23,869 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | WrapperSimpleAppMain
+2015-05-11 10:39:23,870 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 10:39:24,033 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | WrapperSimpleAppMain
+2015-05-11 10:39:24,034 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | WrapperSimpleAppMain
+2015-05-11 10:39:24,036 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-47579-1431333563607-0:1) started | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 10:39:24,037 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | WrapperSimpleAppMain
+2015-05-11 10:39:24,500 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | WrapperSimpleAppMain
+2015-05-11 10:39:24,506 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | WrapperSimpleAppMain
+2015-05-11 10:39:24,551 | INFO  | Using file upload directory: /tmp/uploads | io.hawt.web.UploadServlet | WrapperSimpleAppMain
+2015-05-11 10:39:24,565 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | WrapperSimpleAppMain
+2015-05-11 10:39:24,852 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | WrapperSimpleAppMain
+2015-05-11 10:39:24,893 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | WrapperSimpleAppMain
+2015-05-11 11:05:21,692 | WARN  | Transport Connection to: tcp://127.0.0.1:43793 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:43793@61616
+2015-05-11 11:24:16,987 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp817997876-51
+2015-05-11 15:41:41,568 | WARN  | Transport Connection to: tcp://127.0.0.1:43701 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:43701@61616
+2015-05-11 15:41:42,070 | WARN  | Transport Connection to: tcp://127.0.0.1:43706 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:43706@61616
+2015-05-11 15:41:42,570 | WARN  | Transport Connection to: tcp://127.0.0.1:43713 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:43713@61616
+2015-05-11 15:41:43,070 | WARN  | Transport Connection to: tcp://127.0.0.1:43776 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:43776@61616
+2015-05-11 15:41:43,570 | WARN  | Transport Connection to: tcp://127.0.0.1:43783 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:43783@61616
+2015-05-11 16:05:05,063 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-47579-1431333563607-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-11 16:05:06,685 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-11 16:05:08,619 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-11 16:05:08,629 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-11 16:05:08,707 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-11 16:05:08,775 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-11 16:05:08,781 | INFO  | Connector vm://localhost stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-11 16:05:08,790 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/bin/linux-x86-64/../../data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2015-05-11 16:05:08,791 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-11 16:05:08,792 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-11 16:05:08,793 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-11 16:05:09,524 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-47579-1431333563607-0:1) uptime 5 hours 25 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-11 16:05:09,526 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-47579-1431333563607-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-11 16:05:09,527 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@147597d: startup date [Mon May 11 10:39:21 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2015-05-11 16:05:09,638 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | ActiveMQ ShutdownHook
+2015-05-11 16:05:09,671 | INFO  | Destroying hawtio authentication filter | io.hawt.web.AuthenticationFilter | ActiveMQ ShutdownHook
+2015-05-14 14:38:26,899 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Thu May 14 14:38:26 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2015-05-14 14:38:28,608 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2015-05-14 14:38:28,649 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2015-05-14 14:38:29,159 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-14 14:38:29,213 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-14 14:38:29,307 | INFO  | Recovery replayed 2030 operations from the journal in 0.118 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-14 14:38:29,472 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-44870-1431607109334-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2015-05-14 14:38:29,587 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-14 14:38:29,590 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2015-05-14 14:38:29,596 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-14 14:38:29,599 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-14 14:38:29,604 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-14 14:38:29,606 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-14 14:38:29,611 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-14 14:38:29,612 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2015-05-14 14:38:29,871 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2015-05-14 14:38:29,872 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2015-05-14 14:38:29,877 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-44870-1431607109334-0:1) started | org.apache.activemq.broker.BrokerService | main
+2015-05-14 14:38:29,878 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2015-05-14 14:38:30,459 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | main
+2015-05-14 14:38:30,481 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | main
+2015-05-14 14:38:30,550 | INFO  | Using file upload directory: /home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/tmp/uploads | io.hawt.web.UploadServlet | main
+2015-05-14 14:38:30,584 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | main
+2015-05-14 14:38:30,894 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2015-05-14 14:38:31,227 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2015-05-14 14:44:05,942 | WARN  | Transport Connection to: tcp://127.0.0.1:33200 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:33200@61616
+2015-05-14 14:44:08,286 | WARN  | Transport Connection to: tcp://127.0.0.1:33127 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:33127@61616
+2015-05-14 14:54:18,749 | WARN  | Transport Connection to: tcp://127.0.0.1:33508 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:33508@61616
+2015-05-14 14:54:23,700 | WARN  | Transport Connection to: tcp://127.0.0.1:33537 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:33537@61616
+2015-05-14 14:56:25,093 | WARN  | Transport Connection to: tcp://127.0.0.1:34498 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:34498@61616
+2015-05-14 14:56:27,185 | WARN  | Transport Connection to: tcp://127.0.0.1:34473 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:34473@61616
+2015-05-14 19:00:13,426 | WARN  | Transport Connection to: tcp://127.0.0.1:34629 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:34629@61616
+2015-05-14 19:00:14,674 | WARN  | Transport Connection to: tcp://127.0.0.1:34656 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:34656@61616
+2015-05-14 21:03:55,612 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-44870-1431607109334-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-14 21:03:55,977 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-14 21:03:57,970 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,020 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,084 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,162 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,201 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,202 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,202 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,203 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,480 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-44870-1431607109334-0:1) uptime 6 hours 25 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,481 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-44870-1431607109334-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,482 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Thu May 14 14:38:26 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,501 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | ActiveMQ ShutdownHook
+2015-05-14 21:03:58,515 | INFO  | Destroying hawtio authentication filter | io.hawt.web.AuthenticationFilter | ActiveMQ ShutdownHook
+2015-05-22 10:44:21,589 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 10:44:21 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2015-05-22 10:44:23,120 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2015-05-22 10:44:23,154 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2015-05-22 10:44:23,575 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 10:44:23,626 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 10:44:23,771 | INFO  | Recovery replayed 4508 operations from the journal in 0.168 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 10:44:23,935 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-56146-1432284263800-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2015-05-22 10:44:24,032 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 10:44:24,034 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 10:44:24,041 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 10:44:24,043 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 10:44:24,047 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 10:44:24,048 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 10:44:24,052 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 10:44:24,053 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 10:44:24,232 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2015-05-22 10:44:24,233 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 10:44:24,236 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-56146-1432284263800-0:1) started | org.apache.activemq.broker.BrokerService | main
+2015-05-22 10:44:24,238 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2015-05-22 10:44:24,709 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | main
+2015-05-22 10:44:24,730 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | main
+2015-05-22 10:44:24,791 | INFO  | Using file upload directory: /home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/tmp/uploads | io.hawt.web.UploadServlet | main
+2015-05-22 10:44:24,802 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | main
+2015-05-22 10:44:25,065 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2015-05-22 10:44:25,140 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2015-05-22 10:51:22,839 | WARN  | Transport Connection to: tcp://127.0.0.1:50522 failed: java.io.IOException: Frame size of 1140 MB larger than max allowed 100 MB | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50522@61616
+2015-05-22 10:51:42,007 | WARN  | Transport Connection to: tcp://127.0.0.1:50523 failed: java.net.SocketException: Connection reset | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:50523@61616
+2015-05-22 11:00:15,223 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-56146-1432284263800-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:00:15,276 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:00:16,883 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:00:16,906 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:00:18,886 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:00:18,952 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:00:18,961 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2015-05-22 11:00:18,962 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:00:18,963 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:00:18,963 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:00:19,406 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-56146-1432284263800-0:1) uptime 15 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:00:19,407 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-56146-1432284263800-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:00:19,409 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 10:44:21 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2015-05-22 11:00:19,428 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | ActiveMQ ShutdownHook
+2015-05-22 11:00:19,438 | INFO  | Destroying hawtio authentication filter | io.hawt.web.AuthenticationFilter | ActiveMQ ShutdownHook
+2015-05-22 11:00:23,836 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 11:00:23 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2015-05-22 11:00:24,577 | ERROR | Failed to load: class path resource [activemq.xml], reason: Configuration problem: Bean name 'openwire' is already used in this <beans> element
+Offending resource: class path resource [activemq.xml]
+ | org.apache.activemq.xbean.XBeanBrokerFactory | main
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: Bean name 'openwire' is already used in this <beans> element
+Offending resource: class path resource [activemq.xml]
+
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:80)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.error(BeanDefinitionParserDelegate.java:318)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.checkNameUniqueness(BeanDefinitionParserDelegate.java:530)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseBeanDefinitionElement(BeanDefinitionParserDelegate.java:476)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.parseBeanFromExtensionElement(XBeanNamespaceHandler.java:226)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.parseBeanFromExtensionElement(XBeanNamespaceHandler.java:278)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.parse(XBeanNamespaceHandler.java:156)
+	at org.apache.xbean.spring.context.v2.XBeanNamespaceHandler.parse(XBeanNamespaceHandler.java:49)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1438)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseNestedCustomElement(BeanDefinitionParserDelegate.java:1491)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parsePropertySubElement(BeanDefinitionParserDelegate.java:1045)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCollectionElements(BeanDefinitionParserDelegate.java:1229)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseListElement(BeanDefinitionParserDelegate.java:1205)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.parseListElement(XBeanNamespaceHandler.java:611)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.parseNestedPropertyViaIntrospection(XBeanNamespaceHandler.java:604)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.tryParseNestedPropertyViaIntrospection(XBeanNamespaceHandler.java:573)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.addNestedPropertyElements(XBeanNamespaceHandler.java:542)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.parseBeanFromExtensionElement(XBeanNamespaceHandler.java:229)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.parseBeanFromExtensionElement(XBeanNamespaceHandler.java:278)
+	at org.apache.xbean.spring.context.v2c.XBeanNamespaceHandler.parse(XBeanNamespaceHandler.java:156)
+	at org.apache.xbean.spring.context.v2.XBeanNamespaceHandler.parse(XBeanNamespaceHandler.java:49)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1438)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1428)
+	at org.apache.xbean.spring.context.v2.XBeanBeanDefinitionDocumentReader.parseBeanDefinitions(XBeanBeanDefinitionDocumentReader.java:84)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:139)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:108)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.apache.xbean.spring.context.v2.XBeanXmlBeanDefinitionReader.registerBeanDefinitions(XBeanXmlBeanDefinitionReader.java:79)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:111)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.loadBeanDefinitions(ResourceXmlApplicationContext.java:104)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:64)
+	at org.apache.xbean.spring.context.ResourceXmlApplicationContext.<init>(ResourceXmlApplicationContext.java:52)
+	at org.apache.activemq.xbean.XBeanBrokerFactory$1.<init>(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createApplicationContext(XBeanBrokerFactory.java:104)
+	at org.apache.activemq.xbean.XBeanBrokerFactory.createBroker(XBeanBrokerFactory.java:67)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:71)
+	at org.apache.activemq.broker.BrokerFactory.createBroker(BrokerFactory.java:54)
+	at org.apache.activemq.console.command.StartCommand.runTask(StartCommand.java:87)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)
+	at org.apache.activemq.console.command.ShellCommand.runTask(ShellCommand.java:150)
+	at org.apache.activemq.console.command.AbstractCommand.execute(AbstractCommand.java:57)
+	at org.apache.activemq.console.command.ShellCommand.main(ShellCommand.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.activemq.console.Main.runTaskClass(Main.java:262)
+	at org.apache.activemq.console.Main.main(Main.java:115)
+2015-05-22 11:02:08,790 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 11:02:08 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2015-05-22 11:02:09,890 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2015-05-22 11:02:09,923 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:02:10,288 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 11:02:10,316 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 11:02:10,456 | INFO  | Recovery replayed 4699 operations from the journal in 0.156 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 11:02:10,611 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54153-1432285330478-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:02:10,702 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600&transport.useInactivityMonitor=false&wireFormat.maxInactivityDuration=0 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:02:10,705 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:02:10,711 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:02:10,712 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:02:10,716 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:02:10,717 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:02:10,721 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:02:10,722 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:02:10,896 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2015-05-22 11:02:10,897 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:02:10,900 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54153-1432285330478-0:1) started | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:02:10,901 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:02:11,336 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | main
+2015-05-22 11:02:11,341 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | main
+2015-05-22 11:02:11,383 | INFO  | Using file upload directory: /home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/tmp/uploads | io.hawt.web.UploadServlet | main
+2015-05-22 11:02:11,400 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | main
+2015-05-22 11:02:11,628 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2015-05-22 11:02:11,659 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2015-05-22 11:03:00,055 | WARN  | Transport Connection to: tcp://127.0.0.1:51331 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:51331@61616
+2015-05-22 11:03:06,806 | WARN  | Transport Connection to: tcp://127.0.0.1:51297 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:51297@61616
+2015-05-22 11:04:15,836 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54153-1432285330478-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:04:16,202 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:04:16,859 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:04:18,851 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:04:20,853 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:04:20,920 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:04:20,928 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2015-05-22 11:04:20,929 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:04:20,930 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:04:20,931 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:04:21,275 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54153-1432285330478-0:1) uptime 2 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:04:21,276 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54153-1432285330478-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:04:21,277 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 11:02:08 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2015-05-22 11:04:21,295 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | ActiveMQ ShutdownHook
+2015-05-22 11:04:21,303 | INFO  | Destroying hawtio authentication filter | io.hawt.web.AuthenticationFilter | ActiveMQ ShutdownHook
+2015-05-22 11:04:29,144 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 11:04:29 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2015-05-22 11:04:30,234 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2015-05-22 11:04:30,268 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:04:30,637 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 11:04:30,663 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 11:04:30,804 | INFO  | Recovery replayed 4727 operations from the journal in 0.158 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 11:04:30,957 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-58091-1432285470825-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:04:31,047 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:04:31,050 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:04:31,054 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:04:31,057 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:04:31,063 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:04:31,064 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:04:31,068 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:04:31,069 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:04:31,206 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2015-05-22 11:04:31,207 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:04:31,209 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-58091-1432285470825-0:1) started | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:04:31,210 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:04:31,506 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | main
+2015-05-22 11:04:31,511 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | main
+2015-05-22 11:04:31,546 | INFO  | Using file upload directory: /home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/tmp/uploads | io.hawt.web.UploadServlet | main
+2015-05-22 11:04:31,556 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | main
+2015-05-22 11:04:31,733 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2015-05-22 11:04:31,761 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2015-05-22 11:12:44,748 | WARN  |  | org.eclipse.jetty.servlet.ServletHandler | qtp1869882073-41
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is javax.jms.InvalidSelectorException: dynamicTopics/
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:948)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:838)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: javax.jms.InvalidSelectorException: dynamicTopics/
+	at org.apache.activemq.selector.SelectorParser.parse(SelectorParser.java:88)
+	at org.apache.activemq.selector.SelectorParser.parse(SelectorParser.java:58)
+	at org.apache.activemq.broker.region.AbstractSubscription.parseSelector(AbstractSubscription.java:69)
+	at org.apache.activemq.broker.region.AbstractSubscription.<init>(AbstractSubscription.java:62)
+	at org.apache.activemq.broker.region.PrefetchSubscription.<init>(PrefetchSubscription.java:72)
+	at org.apache.activemq.broker.region.PrefetchSubscription.<init>(PrefetchSubscription.java:84)
+	at org.apache.activemq.broker.region.DurableTopicSubscription.<init>(DurableTopicSubscription.java:61)
+	at org.apache.activemq.broker.region.TopicRegion.createSubscription(TopicRegion.java:312)
+	at org.apache.activemq.broker.jmx.ManagedTopicRegion.createSubscription(ManagedTopicRegion.java:44)
+	at org.apache.activemq.broker.region.AbstractRegion.addConsumer(AbstractRegion.java:290)
+	at org.apache.activemq.broker.region.TopicRegion.addConsumer(TopicRegion.java:152)
+	at org.apache.activemq.broker.region.RegionBroker.addConsumer(RegionBroker.java:401)
+	at org.apache.activemq.broker.jmx.ManagedRegionBroker.addConsumer(ManagedRegionBroker.java:230)
+	at org.apache.activemq.broker.jmx.BrokerView.createDurableSubscriber(BrokerView.java:414)
+	at org.apache.activemq.web.controller.CreateSubscriber.handleRequest(CreateSubscriber.java:53)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	... 41 more
+Caused by: org.apache.activemq.selector.ParseException: Parse error at line 1, column 14.  Encountered: <EOF>
+	at org.apache.activemq.selector.SelectorParser.generateParseException(SelectorParser.java:1313)
+	at org.apache.activemq.selector.SelectorParser.jj_consume_token(SelectorParser.java:1261)
+	at org.apache.activemq.selector.SelectorParser.unaryExpr(SelectorParser.java:474)
+	at org.apache.activemq.selector.SelectorParser.multExpr(SelectorParser.java:411)
+	at org.apache.activemq.selector.SelectorParser.addExpression(SelectorParser.java:360)
+	at org.apache.activemq.selector.SelectorParser.comparisonExpression(SelectorParser.java:212)
+	at org.apache.activemq.selector.SelectorParser.equalityExpression(SelectorParser.java:157)
+	at org.apache.activemq.selector.SelectorParser.andExpression(SelectorParser.java:136)
+	at org.apache.activemq.selector.SelectorParser.orExpression(SelectorParser.java:115)
+	at org.apache.activemq.selector.SelectorParser.JmsSelector(SelectorParser.java:107)
+	at org.apache.activemq.selector.SelectorParser.parse(SelectorParser.java:85)
+	... 59 more
+2015-05-22 11:12:44,754 | WARN  | /admin/createSubscriber.action | org.eclipse.jetty.servlet.ServletHandler | qtp1869882073-41
+javax.jms.InvalidSelectorException: dynamicTopics/
+	at org.apache.activemq.selector.SelectorParser.parse(SelectorParser.java:88)
+	at org.apache.activemq.selector.SelectorParser.parse(SelectorParser.java:58)
+	at org.apache.activemq.broker.region.AbstractSubscription.parseSelector(AbstractSubscription.java:69)
+	at org.apache.activemq.broker.region.AbstractSubscription.<init>(AbstractSubscription.java:62)
+	at org.apache.activemq.broker.region.PrefetchSubscription.<init>(PrefetchSubscription.java:72)
+	at org.apache.activemq.broker.region.PrefetchSubscription.<init>(PrefetchSubscription.java:84)
+	at org.apache.activemq.broker.region.DurableTopicSubscription.<init>(DurableTopicSubscription.java:61)
+	at org.apache.activemq.broker.region.TopicRegion.createSubscription(TopicRegion.java:312)
+	at org.apache.activemq.broker.jmx.ManagedTopicRegion.createSubscription(ManagedTopicRegion.java:44)
+	at org.apache.activemq.broker.region.AbstractRegion.addConsumer(AbstractRegion.java:290)
+	at org.apache.activemq.broker.region.TopicRegion.addConsumer(TopicRegion.java:152)
+	at org.apache.activemq.broker.region.RegionBroker.addConsumer(RegionBroker.java:401)
+	at org.apache.activemq.broker.jmx.ManagedRegionBroker.addConsumer(ManagedRegionBroker.java:230)
+	at org.apache.activemq.broker.jmx.BrokerView.createDurableSubscriber(BrokerView.java:414)
+	at org.apache.activemq.web.controller.CreateSubscriber.handleRequest(CreateSubscriber.java:53)
+	at org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter.handle(SimpleControllerHandlerAdapter.java:48)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:856)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:936)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:838)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:713)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:812)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:806)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:652)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1320)
+	at org.apache.activemq.web.AuditFilter.doFilter(AuditFilter.java:59)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.apache.activemq.web.filter.ApplicationContextFilter.doFilter(ApplicationContextFilter.java:102)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1291)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:443)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:137)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:227)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1044)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:372)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:189)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:978)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:521)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116)
+	at org.eclipse.jetty.server.Server.handle(Server.java:367)
+	at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:486)
+	at org.eclipse.jetty.server.AbstractHttpConnection.content(AbstractHttpConnection.java:937)
+	at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:998)
+	at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:861)
+	at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:240)
+	at org.eclipse.jetty.server.AsyncHttpConnection.handle(AsyncHttpConnection.java:82)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint.handle(SelectChannelEndPoint.java:628)
+	at org.eclipse.jetty.io.nio.SelectChannelEndPoint$1.run(SelectChannelEndPoint.java:52)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.activemq.selector.ParseException: Parse error at line 1, column 14.  Encountered: <EOF>
+	at org.apache.activemq.selector.SelectorParser.generateParseException(SelectorParser.java:1313)
+	at org.apache.activemq.selector.SelectorParser.jj_consume_token(SelectorParser.java:1261)
+	at org.apache.activemq.selector.SelectorParser.unaryExpr(SelectorParser.java:474)
+	at org.apache.activemq.selector.SelectorParser.multExpr(SelectorParser.java:411)
+	at org.apache.activemq.selector.SelectorParser.addExpression(SelectorParser.java:360)
+	at org.apache.activemq.selector.SelectorParser.comparisonExpression(SelectorParser.java:212)
+	at org.apache.activemq.selector.SelectorParser.equalityExpression(SelectorParser.java:157)
+	at org.apache.activemq.selector.SelectorParser.andExpression(SelectorParser.java:136)
+	at org.apache.activemq.selector.SelectorParser.orExpression(SelectorParser.java:115)
+	at org.apache.activemq.selector.SelectorParser.JmsSelector(SelectorParser.java:107)
+	at org.apache.activemq.selector.SelectorParser.parse(SelectorParser.java:85)
+	... 59 more
+2015-05-22 11:14:25,990 | INFO  | Connector vm://localhost started | org.apache.activemq.broker.TransportConnector | qtp1869882073-46
+2015-05-22 11:19:35,613 | WARN  | Transport Connection to: tcp://127.0.0.1:51869 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:51869@61616
+2015-05-22 11:25:50,192 | WARN  | Transport Connection to: tcp://127.0.0.1:52438 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:52438@61616
+2015-05-22 11:26:42,844 | WARN  | Transport Connection to: tcp://127.0.0.1:52860 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:52860@61616
+2015-05-22 11:38:53,052 | WARN  | Transport Connection to: tcp://127.0.0.1:53284 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:53284@61616
+2015-05-22 11:38:58,078 | WARN  | Transport Connection to: tcp://127.0.0.1:53031 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:53031@61616
+2015-05-22 11:39:01,663 | WARN  | Transport Connection to: tcp://127.0.0.1:51472 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:51472@61616
+2015-05-22 11:39:35,001 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-58091-1432285470825-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:39:36,219 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:39:36,806 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:39:36,851 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:39:38,812 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:39:38,879 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:39:38,884 | INFO  | Connector vm://localhost stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:39:38,890 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2015-05-22 11:39:38,891 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:39:38,892 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:39:38,893 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:39:39,140 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-58091-1432285470825-0:1) uptime 35 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:39:39,142 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-58091-1432285470825-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:39:39,143 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 11:04:29 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2015-05-22 11:39:39,184 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | ActiveMQ ShutdownHook
+2015-05-22 11:39:39,188 | INFO  | Destroying hawtio authentication filter | io.hawt.web.AuthenticationFilter | ActiveMQ ShutdownHook
+2015-05-22 11:41:02,447 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 11:41:02 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2015-05-22 11:41:03,531 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2015-05-22 11:41:03,565 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:41:03,938 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 11:41:03,973 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 11:41:04,133 | INFO  | Recovery replayed 5151 operations from the journal in 0.182 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 11:41:04,287 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-59209-1432287664160-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:41:04,379 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:41:04,382 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:41:04,388 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:41:04,390 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:41:04,395 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:41:04,397 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:41:04,400 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 11:41:04,402 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:41:04,530 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2015-05-22 11:41:04,530 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 11:41:04,533 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-59209-1432287664160-0:1) started | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:41:04,533 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2015-05-22 11:41:04,887 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | main
+2015-05-22 11:41:04,893 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | main
+2015-05-22 11:41:04,936 | INFO  | Using file upload directory: /home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/tmp/uploads | io.hawt.web.UploadServlet | main
+2015-05-22 11:41:04,947 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | main
+2015-05-22 11:41:05,138 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2015-05-22 11:41:05,165 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2015-05-22 11:41:52,061 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-59209-1432287664160-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:41:52,618 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:41:54,453 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:41:54,455 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,456 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,522 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,531 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,533 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,534 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,535 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,784 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-59209-1432287664160-0:1) uptime 53.244 seconds | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,785 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-59209-1432287664160-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,787 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 11:41:02 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,809 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | ActiveMQ ShutdownHook
+2015-05-22 11:41:56,813 | INFO  | Destroying hawtio authentication filter | io.hawt.web.AuthenticationFilter | ActiveMQ ShutdownHook
+2015-05-22 12:05:46,597 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 12:05:46 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2015-05-22 12:05:47,703 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2015-05-22 12:05:47,738 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2015-05-22 12:05:48,113 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 12:05:48,151 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 12:05:48,315 | INFO  | Recovery replayed 5163 operations from the journal in 0.183 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 12:05:48,479 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54181-1432289148346-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2015-05-22 12:05:48,578 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 12:05:48,582 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 12:05:48,588 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 12:05:48,590 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 12:05:48,607 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 12:05:48,609 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 12:05:48,614 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 12:05:48,616 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 12:05:48,748 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2015-05-22 12:05:48,748 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 12:05:48,750 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54181-1432289148346-0:1) started | org.apache.activemq.broker.BrokerService | main
+2015-05-22 12:05:48,751 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2015-05-22 12:05:49,099 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | main
+2015-05-22 12:05:49,104 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | main
+2015-05-22 12:05:49,140 | INFO  | Using file upload directory: /home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/tmp/uploads | io.hawt.web.UploadServlet | main
+2015-05-22 12:05:49,151 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | main
+2015-05-22 12:05:49,349 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2015-05-22 12:05:49,378 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main
+2015-05-22 12:14:31,243 | WARN  | Transport Connection to: tcp://127.0.0.1:55783 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:55783@61616
+2015-05-22 12:14:33,680 | WARN  | Transport Connection to: tcp://127.0.0.1:55814 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:55814@61616
+2015-05-22 12:14:36,322 | WARN  | Transport Connection to: tcp://127.0.0.1:55870 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:55870@61616
+2015-05-22 12:41:11,528 | WARN  | Transport Connection to: tcp://127.0.0.1:56430 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:56430@61616
+2015-05-22 12:41:13,673 | WARN  | Transport Connection to: tcp://127.0.0.1:56400 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:56400@61616
+2015-05-22 12:41:16,459 | WARN  | Transport Connection to: tcp://127.0.0.1:56371 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:56371@61616
+2015-05-22 12:44:12,664 | WARN  | Transport Connection to: tcp://127.0.0.1:58207 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58207@61616
+2015-05-22 12:44:15,160 | WARN  | Transport Connection to: tcp://127.0.0.1:58250 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58250@61616
+2015-05-22 12:44:18,710 | WARN  | Transport Connection to: tcp://127.0.0.1:58178 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58178@61616
+2015-05-22 12:54:06,440 | WARN  | Transport Connection to: tcp://127.0.0.1:58541 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58541@61616
+2015-05-22 12:54:06,440 | WARN  | Transport Connection to: tcp://127.0.0.1:58649 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58649@61616
+2015-05-22 12:54:09,073 | WARN  | Transport Connection to: tcp://127.0.0.1:58600 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58600@61616
+2015-05-22 12:54:09,074 | WARN  | Transport Connection to: tcp://127.0.0.1:58675 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58675@61616
+2015-05-22 12:54:11,407 | WARN  | Transport Connection to: tcp://127.0.0.1:58423 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:58423@61616
+2015-05-22 13:45:27,304 | WARN  | Transport Connection to: tcp://127.0.0.1:59012 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59012@61616
+2015-05-22 13:45:28,557 | WARN  | Transport Connection to: tcp://127.0.0.1:59093 failed: java.io.EOFException | org.apache.activemq.broker.TransportConnection.Transport | ActiveMQ Transport: tcp:///127.0.0.1:59093@61616
+2015-05-22 13:49:33,701 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54181-1432289148346-0:1) is shutting down | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 13:49:35,638 | INFO  | Connector openwire stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 13:49:37,639 | INFO  | Connector amqp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 13:49:39,637 | INFO  | Connector stomp stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 13:49:41,637 | INFO  | Connector mqtt stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 13:49:41,703 | INFO  | Connector ws stopped | org.apache.activemq.broker.TransportConnector | ActiveMQ ShutdownHook
+2015-05-22 13:49:41,712 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] stopped | org.apache.activemq.store.kahadb.plist.PListStoreImpl | ActiveMQ ShutdownHook
+2015-05-22 13:49:41,713 | INFO  | Stopping async queue tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 13:49:41,714 | INFO  | Stopping async topic tasks | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 13:49:41,715 | INFO  | Stopped KahaDB | org.apache.activemq.store.kahadb.KahaDBStore | ActiveMQ ShutdownHook
+2015-05-22 13:49:41,976 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54181-1432289148346-0:1) uptime 1 hour 43 minutes | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 13:49:41,977 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-54181-1432289148346-0:1) is shutdown | org.apache.activemq.broker.BrokerService | ActiveMQ ShutdownHook
+2015-05-22 13:49:41,979 | INFO  | Closing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 12:05:46 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | ActiveMQ ShutdownHook
+2015-05-22 13:49:42,001 | INFO  | Destroying Spring FrameworkServlet 'dispatcher' | /admin | ActiveMQ ShutdownHook
+2015-05-22 13:49:42,007 | INFO  | Destroying hawtio authentication filter | io.hawt.web.AuthenticationFilter | ActiveMQ ShutdownHook
+2015-05-22 22:12:11,357 | INFO  | Refreshing org.apache.activemq.xbean.XBeanBrokerFactory$1@7e6ace81: startup date [Fri May 22 22:12:11 CEST 2015]; root of context hierarchy | org.apache.activemq.xbean.XBeanBrokerFactory$1 | main
+2015-05-22 22:12:13,759 | INFO  | PListStore:[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/localhost/tmp_storage] started | org.apache.activemq.store.kahadb.plist.PListStoreImpl | main
+2015-05-22 22:12:13,812 | INFO  | Using Persistence Adapter: KahaDBPersistenceAdapter[/home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/data/kahadb] | org.apache.activemq.broker.BrokerService | main
+2015-05-22 22:12:14,457 | INFO  | KahaDB is version 5 | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 22:12:14,602 | INFO  | Recovering from the journal ... | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 22:12:14,800 | INFO  | Recovery replayed 6363 operations from the journal in 0.261 seconds. | org.apache.activemq.store.kahadb.MessageDatabase | main
+2015-05-22 22:12:14,997 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-60308-1432325534823-0:1) is starting | org.apache.activemq.broker.BrokerService | main
+2015-05-22 22:12:15,090 | INFO  | Listening for connections at: tcp://camille-POLYTECH:61616?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 22:12:15,093 | INFO  | Connector openwire started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 22:12:15,100 | INFO  | Listening for connections at: amqp://camille-POLYTECH:5672?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 22:12:15,102 | INFO  | Connector amqp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 22:12:15,107 | INFO  | Listening for connections at: stomp://camille-POLYTECH:61613?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 22:12:15,108 | INFO  | Connector stomp started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 22:12:15,112 | INFO  | Listening for connections at: mqtt://camille-POLYTECH:1883?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.TransportServerThreadSupport | main
+2015-05-22 22:12:15,113 | INFO  | Connector mqtt started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 22:12:15,289 | INFO  | Listening for connections at ws://camille-POLYTECH:61614?maximumConnections=1000&wireFormat.maxFrameSize=104857600 | org.apache.activemq.transport.ws.WSTransportServer | main
+2015-05-22 22:12:15,290 | INFO  | Connector ws started | org.apache.activemq.broker.TransportConnector | main
+2015-05-22 22:12:15,292 | INFO  | Apache ActiveMQ 5.9.0 (localhost, ID:camille-POLYTECH-60308-1432325534823-0:1) started | org.apache.activemq.broker.BrokerService | main
+2015-05-22 22:12:15,293 | INFO  | For help or more information please see: http://activemq.apache.org | org.apache.activemq.broker.BrokerService | main
+2015-05-22 22:12:16,046 | INFO  | Welcome to hawtio 1.2-M23 : http://hawt.io/ : Don't cha wish your console was hawt like me? ;-) | io.hawt.jmx.JmxTreeWatcher | main
+2015-05-22 22:12:16,066 | INFO  | Starting hawtio authentication filter, JAAS realm: "activemq" authorized role: "admins" role principal classes: "org.apache.activemq.jaas.GroupPrincipal" | io.hawt.web.AuthenticationFilter | main
+2015-05-22 22:12:16,120 | INFO  | Using file upload directory: /home/camille/Documents/COURS/SI4/S8/AppRep/apache-activemq-5.9.0/tmp/uploads | io.hawt.web.UploadServlet | main
+2015-05-22 22:12:16,132 | INFO  | jolokia-agent: Using access restrictor classpath:/jolokia-access.xml | /hawtio | main
+2015-05-22 22:12:16,418 | INFO  | ActiveMQ WebConsole available at http://localhost:8161/ | org.apache.activemq.web.WebConsoleStarter | main
+2015-05-22 22:12:16,528 | INFO  | Initializing Spring FrameworkServlet 'dispatcher' | /admin | main

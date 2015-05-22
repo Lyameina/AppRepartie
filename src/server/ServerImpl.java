@@ -60,10 +60,7 @@ public class ServerImpl extends UnicastRemoteObject implements Server {
             return user.login(login, password);
 
         } catch(NullPointerException e){
-
             System.err.println("[FAIL] Those login params do not match with any account already registered.");
-            e.printStackTrace();
-
         }
 
         return false;

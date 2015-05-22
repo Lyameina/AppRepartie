@@ -7,9 +7,7 @@ import java.rmi.registry.LocateRegistry;
  * server.LauncherRMI - apprep :: twitter :: server
  *
  * Classe qui lance le serveur RMI.
- * Penser à ouvrir le rmi registry sur le port 2048 avant
- * de lancer le serveur.
- *
+*
  * @author Camille Boinaud [boinaud@polytech.unice.fr]
  * @author Maylanie Mesnier [mesnier@polytech.unice.fr]
  * @version 13/05/15
