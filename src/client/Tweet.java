@@ -13,16 +13,18 @@ public class Tweet {
     private String login;
     private String msg;
     private String date;
+    private String hashtag;
 
-    public Tweet(String login, String msg, String date){
+    public Tweet(String login, String msg, String date, String hashtag){
         this.login = login;
         this.msg = msg;
         this.date = date;
+        this.hashtag = hashtag;
     }
 
     @Override
     public String toString(){
-        return "\n**********\n\nNew tweet from : "+login+" at "+date+"\n\n"+msg+"\n\n**********\n";
+        return "\n**********\n\nNew tweet from : "+login+" at "+date+"\n\n"+msg+" - #"+hashtag+"\n\n**********\n";
     }
 
 

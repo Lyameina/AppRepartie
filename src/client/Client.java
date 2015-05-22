@@ -1,7 +1,6 @@
 package client;
 
 import server.Server;
-import server.ServerImpl;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -22,7 +21,7 @@ import java.util.Map;
 
 public class Client {
 
-    private static Map<SubJMS, String> subscribers;
+    private static Map<SubJMS, String> subscribers = new HashMap<SubJMS, String>();
     public static List<Tweet> tweets = new ArrayList<Tweet>();
 
 
@@ -30,27 +29,28 @@ public class Client {
 
     public static boolean creerCompte(String login, String mdp) throws RemoteException {
 
-        System.out.println("Création du compte... " + login + ">" + mdp + "\n");
+        System.out.println("Creation du compte... " + login + ">" + mdp + "\n");
         if (serveur.signup(login, mdp)) {
-            System.out.println("Création réussie. \n");
+            System.out.println("Creation reussie. \n");
             return true;
         }
         else{
-            System.out.println("Création échouée. Le login est surrement déjà pris \n");
+            System.out.println("Creation echouee. Le login est certainement deja pris \n");
             return false;
     }}
 
     public static void recupererHashtags(String login) throws RemoteException {
-        System.out.println("Recupération des Hashtags aux quels vous êtes abonné...");
+        System.out.println("Updating hashtags you followed");
 
         List<String> list = serveur.getUserHashtags(login);
-        subscribers = new HashMap<SubJMS, String>();
-        System.out.println("* Mise en place des subcribers JMS *");
+        System.out.println("* Setting up JMS Subscribers *");
         for (String s : list) {
-            SubJMS sub = new SubJMS(s);
-            subscribers.put(sub, s);
+            if (!subscribers.containsValue(s)){
+                SubJMS sub = new SubJMS(s);
+                subscribers.put(sub, s);
+            }
         }
-        System.out.println("* Suscribers configurés ! *");
+        System.out.println("* Suscribers configured ! *");
 
     }
 
@@ -59,8 +59,8 @@ public class Client {
 
         System.out.println(
                 "****************************************\n"
-                        + "****** BIENVENU DANS MINI TWITTER ******\n"
-                        + "****************************************\n\n");
+              + "****** BIENVENUE SUR MINI TWITTER ******\n"
+              + "****************************************\n\n");
 
 
         try {
@@ -91,12 +91,12 @@ public class Client {
                 System.out.println("Connexion au compte " + login + ", un instant...\n ");
 
                 if (serveur.login(login, mdp)) {
-                    System.out.println("Connexion au compte réussie \n");
+                    System.out.println("Connexion au compte reussie \n");
                     isConnected = true;
                 } else {
 
                     System.out.println("Le compte login: " + login + " mot de passe : " + mdp + " n'existe pas\n");
-                    System.out.println("Voulez-vous le crée?(o/n) \n");
+                    System.out.println("Voulez-vous le creer ?(o/n) \n");
                     choix = bufferRead.read();
                     if (choix == 'o') {
                        isConnected = creerCompte(login, mdp);
@@ -106,19 +106,15 @@ public class Client {
 
             recupererHashtags(login);
 
-            boolean quitter = false;
-
-            while (!quitter) {
-                System.out.println("\n\nCHOISIR UNE ACTION :\n" +
-                        "===================\n");
-                System.out.println("" +
+            while (true) {
+                System.out.print("\n\nCHOISIR UNE ACTION :\n ====================\n\n" +
                         "1 - Afficher la liste des Hashags\n" +
-                        "2 - Souscrire à un Hashtag\n" +
+                        "2 - Souscrire a un Hashtag\n" +
                         "3 - Afficher la liste des Hashtags suivis\n" +
                         "4 - Se desabonner d'un Hashtag\n" +
                         "5 - Envoyer un tweet \n" +
                         "6 - Voir les tweets \n" +
-                        "q - Deconnexion et quitter");
+                        "q - Deconnexion et quitter\n");
 
                 choix = bufferRead.read();
                 String hashtag;
@@ -147,14 +143,15 @@ public class Client {
                         System.out.println("Votre message: ");
                         serveur.sendmsg(hashtag, bufferReadLine.readLine(), login);
                         recupererHashtags(login);
-                        System.out.println("Tweet envoyé\n");
+                        System.out.println("Tweet envoye\n");
                         break;
                     case '6':
                         voirTweets();
                         break;
                     case 'q':
                         serveur.logout(login);
-                        quitter = true;
+                        System.out.println("Vous etes deconnecte(e) ! A bientot !");
+                        System.exit(0);
                         break;
                 }
 
@@ -172,7 +169,7 @@ public class Client {
     }
 
     private static void afficherMesHashtags(String login) throws RemoteException {
-        System.out.println("Recupération de la liste de mes Hashtags...\n");
+        System.out.println("Recuperation de la liste de mes Hashtags...\n");
         List<String> list = serveur.getUserHashtags(login);
         for (String s : list) {
             System.out.println(s);
@@ -181,7 +178,7 @@ public class Client {
 
 
     private static void afficherHashtags() throws RemoteException {
-        System.out.println("Recupération de la liste des Hashtags...\n");
+        System.out.println("Recuperation de la liste des Hashtags...\n");
         List<String> list = serveur.getAllHashtags();
         for (String s : list) {
             System.out.println(s);

@@ -14,11 +14,15 @@ import java.util.Hashtable;
  * @version 13/05/15
  */
 
-public class SubJMS implements MessageListener {
+public class SubJMS {
 
-    private Connection connect = null;
-    private Session receiveSession = null;
-    private InitialContext context = null;
+    private static String url = "failover://tcp://localhost:61616";
+    public static ConnectionFactory connectFactory;
+    public static Connection connect;
+    public static Session receiveSession;
+    public static Topic topic;
+    public static MessageConsumer consumer;
+    public static InitialContext context;
 
     public SubJMS(String topic)
     {
@@ -44,11 +48,11 @@ public class SubJMS implements MessageListener {
 
             context = new InitialContext(properties);
 
-            javax.jms.ConnectionFactory factory = (ConnectionFactory) context.lookup("ConnectionFactory");
-            connect = factory.createConnection();
+            connectFactory = (ConnectionFactory) context.lookup("ConnectionFactory");
+
+            connect = connectFactory.createConnection();
 
             this.configSubscriber(topic);
-            connect.start();
 
         } catch (JMSException e){
             e.printStackTrace();
@@ -65,29 +69,22 @@ public class SubJMS implements MessageListener {
      */
     private void configSubscriber(String nameTopic) throws JMSException, NamingException {
         receiveSession = connect.createSession(false, Session.AUTO_ACKNOWLEDGE);
-        Topic topic = (Topic) context.lookup(nameTopic);
-        MessageConsumer topicReceiver = receiveSession.createConsumer(topic);
+        topic = (Topic) context.lookup("dynamicTopics/"+nameTopic);
+        consumer = receiveSession.createConsumer(topic);
         connect.start();
 
-        while (true){
-            Message m= topicReceiver.receive();
-            onMessage(m);
-        }
+        MessageListener listener = new MessageListener() {
+            public void onMessage(Message message) {
+                try {
+                    Client.tweets.add(new Tweet(((MapMessage) message).getString("user"), ((MapMessage) message).getString("tweet"),
+                            ((MapMessage) message).getString("date"), ((MapMessage) message).getString("hashtag")));
+                } catch (JMSException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+
+        consumer.setMessageListener(listener);
     }
 
-    /**
-     * Catch message reception events and print the message received.
-     * @param message : String
-     */
-    public void onMessage(Message message) {
-        try {
-           System.out.println(new Tweet(((MapMessage) message).getString("user"), ((MapMessage) message).getString("tweet"),
-                   ((MapMessage) message).getString("msg")));
-
-           // Client.tweets.add(new Tweet(((MapMessage) message).getString("user"), ((MapMessage) message).getString("tweet"),
-              //     ((MapMessage) message).getString("msg")));
-        } catch (JMSException e) {
-            e.printStackTrace();
-        }
-    }
 }

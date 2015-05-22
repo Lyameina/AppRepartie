@@ -20,7 +20,7 @@ public class PubJMS {
     private Connection connect = null;
     private Session sendSession = null;
     private MessageProducer sender = null;
-    private InitialContext context = null;
+    InitialContext context = null;
 
     public PubJMS()
     {
@@ -55,20 +55,19 @@ public class PubJMS {
 
     /**
      * Method used to set publisher parameters like the topic name
-     *
      * @param hashtag : String
      * @throws JMSException
      * @throws NamingException
      */
     private void publisherConfiguration(String hashtag) throws JMSException, NamingException {
-        sendSession = connect.createSession(true, -1);
-        Topic topic = (Topic) context.lookup(hashtag);
+        connect.start();
+        sendSession = connect.createSession(false, Session.AUTO_ACKNOWLEDGE);
+        Topic topic = (Topic) context.lookup("dynamicTopics/"+hashtag);
         sender = sendSession.createProducer(topic);
     }
 
     /**
      * Method used to publish a new message in the topic called  "hashtag"
-     *
      * @param hashtag : String
      * @param msg     : String
      * @param login   : String
@@ -87,8 +86,10 @@ public class PubJMS {
             mess.setString("date", c.get(Calendar.DAY_OF_MONTH) + "/" + c.get(Calendar.MONTH) + "/" + c.get(Calendar.YEAR)
                     + " " + (c.get(Calendar.AM_PM) == Calendar.AM ? c.get(Calendar.HOUR) : (c.get(Calendar.HOUR) + 12))
                     + ":" + c.get(Calendar.MINUTE));
+            mess.setString("hashtag", hashtag);
 
             sender.send(mess);
+            connect.stop();
 
         } catch (NamingException e) {
             e.printStackTrace();
