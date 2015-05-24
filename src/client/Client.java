@@ -6,10 +6,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.rmi.Naming;
 import java.rmi.RemoteException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * client.Client - apprep :: twitter :: client
@@ -44,11 +41,11 @@ public class Client {
 
         List<String> list = serveur.getUserHashtags(login);
         System.out.println("* Setting up JMS Subscribers *");
+
         for (String s : list) {
-            if (!subscribers.containsValue(s)){
-                SubJMS sub = new SubJMS(s);
-                subscribers.put(sub, s);
-            }
+            SubJMS sub = new SubJMS(s);
+            subscribers.put(sub, s);
+
         }
         System.out.println("* Suscribers configured ! *");
 
@@ -105,16 +102,8 @@ public class Client {
             }
 
             recupererHashtags(login);
-
+            printMenu();
             while (true) {
-                System.out.print("\n\nCHOISIR UNE ACTION :\n ====================\n\n" +
-                        "1 - Afficher la liste des Hashags\n" +
-                        "2 - Souscrire a un Hashtag\n" +
-                        "3 - Afficher la liste des Hashtags suivis\n" +
-                        "4 - Se desabonner d'un Hashtag\n" +
-                        "5 - Envoyer un tweet \n" +
-                        "6 - Voir les tweets \n" +
-                        "q - Deconnexion et quitter\n");
 
                 choix = bufferRead.read();
                 String hashtag;
@@ -154,6 +143,7 @@ public class Client {
                         System.exit(0);
                         break;
                 }
+                printMenu();
 
             }
 
@@ -183,5 +173,18 @@ public class Client {
         for (String s : list) {
             System.out.println(s);
         }
+    }
+
+    private static void printMenu(){
+        System.out.println();
+        System.out.println("CHOISIR UNE ACTION :\n ====================\n" +
+                "1 - Afficher la liste des Hashags\n" +
+                "2 - Souscrire a un Hashtag\n" +
+                "3 - Afficher la liste des Hashtags suivis\n" +
+                "4 - Se desabonner d'un Hashtag\n" +
+                "5 - Envoyer un tweet \n" +
+                "6 - Voir les tweets \n" +
+                "q - Deconnexion et quitter");
+        System.out.println();
     }
 }
